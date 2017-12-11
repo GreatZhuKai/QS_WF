@@ -1,0 +1,22 @@
+{
+  "name": "step-1",
+  "version": "1.0.0",
+  "description": "1. task 任务管理 default\r   2. src dest\r   3. src 将开发目录文件，经过一些处理(转译es6，压缩，合并)；\r      将其目标文件放置到dist线上目录",
+  "main": "index.js",
+  "scripts": {
+    "build": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.0",
+    "gulp-clean-css": "^3.9.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-uglify": "^3.0.0"
+  }
+}

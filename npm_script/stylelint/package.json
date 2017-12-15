@@ -6,7 +6,9 @@
   "scripts": {
     "lint:js": "eslint *.js",
     "lint:js:fix": "npm run lint:js -- --fix",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "cover": "nyc --reporter=html npm test",
+    "postcover": "opn coverage/index.html",
+    "test": "mocha tests/"
   },
   "keywords": [],
   "author": "",
@@ -14,6 +16,8 @@
   "devDependencies": {
     "chai": "^4.1.2",
     "eslint": "^4.13.1",
-    "mocha": "^4.0.1"
+    "mocha": "^4.0.1",
+    "nyc": "^11.3.0",
+    "opn-cli": "^3.1.0"
   }
 }

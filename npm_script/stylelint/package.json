@@ -4,11 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "eslint":"eslint *.js",
-    "eslint:fix":"eslint --fix *.js",
+    "lint:js": "eslint *.js",
+    "lint:js:fix": "npm run lint:js -- --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "eslint": "^4.13.1",
+    "mocha": "^4.0.1"
+  }
 }
